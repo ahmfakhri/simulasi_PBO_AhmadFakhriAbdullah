@@ -32,9 +32,10 @@ class PendaftaranKedinasan extends Pendaftaran
         return $this->instansiSponsor;
     }
 
+    // Override method hitungTotalBiaya() dari class Pendaftaran
     public function hitungTotalBiaya()
     {
-        return $this->biayaPendaftaranDasar;
+        return $this->biayaPendaftaranDasar * 1.25;
     }
 
     public function tampilkanInfoJalur()
